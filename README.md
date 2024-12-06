@@ -12,7 +12,13 @@ CreateDatabase_1.sql
 ```
 CreateUserForAssetsDatabase_2.sql
 ```
-3. Apply migration to Assets database by running this command from the root:
+3. Intall these dependencies :
+```
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.Extensions.Configuration.Json
+```
+4. Apply migration to Assets database by running this command from the root:
 ```
 dotnet ef database update
 ```
