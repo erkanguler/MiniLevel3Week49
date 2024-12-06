@@ -8,17 +8,18 @@ Before running the application do these:
 ```
 CreateDatabase_1.sql
 ```
-2. Create user for that database by running this script:
+2. Create an user for that database by running this script:
 ```
 CreateUserForAssetsDatabase_2.sql
 ```
 3. Intall these dependencies :
 ```
+dotnet tool install --global dotnet-ef
 dotnet add package Microsoft.EntityFrameworkCore.Design
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 dotnet add package Microsoft.Extensions.Configuration.Json
 ```
-4. Apply migration to Assets database by running this command from the root:
+4. Apply migration to Assets database by running this command:
 ```
 dotnet ef database update
 ```
