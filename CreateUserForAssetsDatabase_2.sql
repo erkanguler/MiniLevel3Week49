@@ -1,0 +1,9 @@
+
+use Assets;
+
+CREATE LOGIN AssetUser123 WITH PASSWORD = 'AssetUser_123';
+CREATE USER AssetUser123 FOR LOGIN AssetUser123;
+
+ALTER ROLE db_owner ADD MEMBER [AssetUser123];
+
+GRANT CONTROL ON DATABASE::Assets TO AssetUser123;
