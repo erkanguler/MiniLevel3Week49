@@ -12,7 +12,10 @@ CreateDatabase_1.sql
 ```
 CreateUserForAssetsDatabase_2.sql
 ```
-
+3. Apply migration to Assets database by running this command from the root:
+```
+dotnet ef database update
+```
 
 To run the application, use this command from CLI
  - dotnet run
